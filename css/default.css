@@ -1,0 +1,93 @@
+/*@import "reset.css";*/
+/*<style type='text/css'>*/
+		
+		body {
+			background-image: url("../img/charlotte.jpg"),url("../img/paper.png");	/*แสดงที่เดียว2รูป*/
+			background-position: 50% 0%;	/*ย้ายตำแหน่งภาพที่ไม่ใช่ repeat ได้*/
+			background-repeat: no-repeat, repeat;/*ภาพแรกให้เป็นภาพเดี่ยว ภาพสองให้repeat ให้เต็ม*/
+
+			}
+		#wrapper{
+			width: 500px;	/*ใช้ width ของ wrapper คลุมเลยทำให้ header,content ไม่ต้องใช้ width*/
+			margin: 0 auto;	/*auto ทำให้มันอยู่center*/
+			border: 1px solid green;
+			overflow: auto;
+		}
+	
+		#header {
+			/*width:500px;*/
+			padding:10px;
+			height:100px;
+			background-color: black;
+			color:#fff;
+		}
+		#header #nav{
+			/*width:500px;*/
+			height:100px;
+			background-color: black;
+			color:#fff;
+		}
+
+				/* Links*/
+		#header #nav a:link {	/* unvisited link */
+			color:red;
+			display:inline;
+			/*display:block;*/
+		}
+		#header #nav a:visited {	/* visited link */
+			color:green;
+		}
+
+		#header #nav a:hover {	/* mouse over link */
+			color:hotpink;
+		}
+
+		#header #nav a:active {	/* selected link */
+			color:blue;
+		}
+
+		#content{
+			/*width:500px;*/
+			border:1px dashed #fff;
+			padding:10px;
+		}
+
+		#content h2{
+			background-color: red;
+		}
+		
+		#content pre{
+			background-color: gray;
+		}
+		#output, #messages {
+			padding:10px;
+			background-color: Gold;
+		}
+		#footer {
+			padding:10px;
+			background-color: DodgerBlue;
+		}
+
+
+		.b{
+			font-weight: bolder;
+		}
+		.u{
+			text-decoration: underline;
+		}
+		h1, h2{
+			font-size: 20px;
+			background-color: purple;
+		}
+		h1{
+			font-size: 25px;
+			background-color: LightGoldenRodYellow ;
+		}
+
+		p{
+			border:1px solid white;
+		}
+		hr{
+			height:10px;
+		}
+/*</style>	*/

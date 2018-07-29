@@ -1,0 +1,10 @@
+configure terminal
+wlan-ssid-profile default
+ssid ZyXEL
+security default
+exit
+show wlan-ssid-profile default
+write
+reboot
+
+

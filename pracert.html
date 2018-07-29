@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<!-- <link rel="stylesheet" href="css/default.css" /> -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<style type="text/css">
+		.loader {
+			background:url(../img/loader.gif) no-repeat;
+			height:32px;
+			width:32px;
+			display:inline-block;
+
+
+		}
+		label {
+			width:100px;
+			display: inline-block;
+		}
+	</style>	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".loader").hide();
+			$('form').submit(function(){
+				$(".loader").show();
+				return false;
+			});
+
+		});
+
+	</script>
+</head>		
+<body>
+	<form action="handle.php" method="post">
+		<label>Name:</label>
+		<input type="text" /><br />
+		<label>Age:</label>
+		<input type="text" /><br />
+		<label><div class="loader"></div></label>
+		<input type="submit" /><br />
+	</form>
+	
+</body>
+</html>

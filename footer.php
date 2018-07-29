@@ -1,0 +1,1 @@
+<div id="footer">Footer Text (c)<?php CopyRight();?> </div>

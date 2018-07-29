@@ -1,0 +1,14 @@
+#player{
+	position: absolute;
+	background: url(../img/character.png) no-repeat center 15%;	
+	width: 109px;
+	height: 154px;
+	border: 1px solid red;
+
+}
+#map{
+	position: relative;
+	border: 1px solid black;
+	height: 300px;
+	width: 800px;
+}

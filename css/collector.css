@@ -1,0 +1,58 @@
+/*@import "reset.css";*/
+<style type="text/css">
+
+	body {}
+/*	* {font-weight: bolder;}*/
+	/*p {font-weight: bolder;}*/
+	p,li {font-weight: bolder;}
+	body > h1 {color:green;}
+	body > h2 {color:orangered;}
+	ul {
+		list-style: none; /* Remove HTML bullets */	
+	}
+	li::before{
+		content: "•"; /* Insert content that looks like bullets */
+		padding-right: 8px;
+    	color: blue; /* Or a color you prefer*/
+    }
+	li:empty{
+		border: 1px solid green;
+	}
+	li:empty::before{
+		content: "Hey man";
+	}
+	li:nth-child(4){
+		font-weight: bolder;
+	}
+	li:nth-last-child(3){
+		font-style: italic;
+	}
+	input:enabled{
+		border:3px solid red;
+	}
+	input:enabled:not([type=submit]){
+		border:3px solid yellow;
+	}
+	input:disabled{
+		border:3px solid gray;
+	}
+	input[type^=sub]{
+		font-weight: bolder;
+	}
+	input[type$=mit]:disabled {
+		font-style: italic;
+		background-color: purple;
+	}
+	p::first-letter {
+		font-size: 35px;
+	}
+	p::first-line {
+		letter-spacing: 10px
+	}
+	p::before {
+		content:"Hey hows life?";
+	}
+	p::after {
+		content:"Im at the end.";
+	}
+</style>	
