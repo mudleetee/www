@@ -9,7 +9,7 @@
 
 	session_start();
 
-	$DB = new DB($config);
+	$db = new DB($config);
 
 
 ?>

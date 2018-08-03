@@ -17,7 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `db_winet`
+-- Database: `db_winet` 
+-- database ต้องสร้างเองก่อน
 --
 
 -- --------------------------------------------------------
@@ -26,7 +27,7 @@ SET time_zone = "+00:00";
 -- โครงสร้างตาราง `wi_service`
 --
 
-CREATE TABLE IF NOT EXISTS `wi_service2` (
+CREATE TABLE IF NOT EXISTS `wi_service` (
   `service_auto` int(5) NOT NULL AUTO_INCREMENT,
   `cpe_mac` varchar(20) CHARACTER SET utf8 DEFAULT NULL,  
   `service_id` varchar(10) CHARACTER SET utf8 DEFAULT NULL,

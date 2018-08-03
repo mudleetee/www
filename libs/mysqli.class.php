@@ -22,7 +22,7 @@
 			if (mysqli_connect_errno()){
 				die("Connection failed: " . $this->mysqli->connect_error);
 			}
-			// echo "MySQLi (object-oriented) Connected OK".'<br>';
+			echo "MySQLi (object-oriented) Connected OK".'<br>';
 		}
 
 		public function query($SQL){
@@ -53,7 +53,7 @@
 		}
 
 		public function id(){
-			return $thid->mysqli->inset_id;
+			return $this->mysqli->inset_id;
 		}
 
 		public function __destruct(){
