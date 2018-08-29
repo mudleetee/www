@@ -22,6 +22,7 @@
 			if (mysqli_connect_errno()){
 				die("Connection failed: " . $this->mysqli->connect_error);
 			}
+			$this->mysqli->set_charset("utf8");
 			echo "MySQLi (object-oriented) Connected OK".'<br>';
 		}
 
